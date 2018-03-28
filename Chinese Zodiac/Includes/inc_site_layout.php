@@ -1,0 +1,2 @@
+<h4>Site Layout</h4>
+<p>A website or page can be either static or dynamic. Static typically stays the same and will not change, the same content remains for each viewer, hence the word static. A dynamic website's information does change depending on the viewer and even some other cool ways such as the time, and even the viewers language. Static websites typically only use html and CSS and the only interaction is hyperlinks. Dynamic sites use html and CSS but also use JavaScript and/or PHP for the interactivity.</p>
