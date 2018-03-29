@@ -27,3 +27,6 @@ echo "Listing ".$folderToList."\n";
 
 listFiles($folderToList, 1);   // Lists the files of chosen folder  
 
+
+
+
