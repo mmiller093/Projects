@@ -17,7 +17,7 @@ function listFiles($folder, $depth) { // Function where you list the folder
 	   	$highestDepth = $depth;
 	}
 
-	$contents = scandir($folder); // some php function
+	$contents = scandir($folder); // get directory cnotents as an array
 	foreach ($contents as $item) {
 		if ($item == "." || $item == "..") {
 			continue; // skip these, they aren't real
