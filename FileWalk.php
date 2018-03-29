@@ -2,12 +2,13 @@
 
 #dirList = (fileath)
 
-$maximumDepth = 1;
+$highestDepth = 1;
 
 function listFiles($folder, $depth) { // Function where you list the folder     
-	global $maximumDepth; // tell it we want to use the one outside the function, not make a new one
-	if ($depth > $maximumDepth) {
-	   	$maximumDepth = $depth;
+	global $highestDepth; // tell it we want to use the one outside the function, not make a new one
+
+	if ($depth > $highestDepth) {
+	   	$highestDepth = $depth;
 	}
 	$contents = scandir($folder); // some php function
 	foreach ($contents as $item) {
@@ -33,7 +34,7 @@ echo "Listing ".$folderToList."\n";
 
 listFiles($folderToList, 1);   // Lists the files of chosen folder  
 
-echo "Maximum depth: ".$maximumDepth."\n";
+echo "Maximum depth: ".$highestDepth."\n";
 
 
 
