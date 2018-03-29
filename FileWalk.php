@@ -24,6 +24,8 @@ function listFiles($folder, $depth) { // Function where you list the folder
 
 echo "Please enter a folder to list: ";
 $folderToList = readline();
+echo "Enter max recursion level: ";
+$maximumDepth = readline();
 
 if (!file_exists($folderToList)) {
 	echo "Sorry, that doesn't exist!\n";
