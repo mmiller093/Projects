@@ -25,7 +25,5 @@ if (!file_exists($folderToList)) {
 
 echo "Listing ".$folderToList."\n";
 
-// pretend this did something mroe
-
 listFiles($folderToList, 1);   // Lists the files of chosen folder  
 
