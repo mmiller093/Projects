@@ -5,6 +5,12 @@
 $highestDepth = 1;
 
 function listFiles($folder, $depth) { // Function where you list the folder     
+	global $maximumDepth;
+
+	if ($depth > $maximumDepth) { // if we exceed the user specified highest depth, don't go any further
+		return;
+	}
+
 	global $highestDepth; // tell it we want to use the one outside the function, not make a new one
 
 	if ($depth > $highestDepth) {
