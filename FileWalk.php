@@ -13,9 +13,10 @@ function listFiles($folder, $depth) { // Function where you list the folder
 
 	global $highestDepth; // tell it we want to use the one outside the function, not make a new one
 
-	if ($depth > $highestDepth) {
+	if ($depth > $highestDepth) { // set the highest depth counter to this depth if it is a new maximum
 	   	$highestDepth = $depth;
 	}
+
 	$contents = scandir($folder); // some php function
 	foreach ($contents as $item) {
 		if ($item == "." || $item == "..") {
